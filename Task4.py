@@ -1,5 +1,4 @@
-with open('Text4.txt', 'r') as data:
-    txt = data.read()
+
 
 
 def compress(txt):
@@ -27,6 +26,8 @@ def extract(txt):
     return res
 
 
-s = input("Введите текст для сжатия: ")
+with open('Python_HT5/Text4.txt', 'r') as data:
+    s = data.read()
+
 print(f"Текст после сжатия: {compress(s)}")
 print(f"Текст после распаковки: {extract(compress(s))}")
