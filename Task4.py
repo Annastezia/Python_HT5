@@ -1,3 +1,7 @@
+with open('Text4.txt', 'r') as data:
+    txt = data.read()
+
+
 def compress(txt):
     count = 1
     res = ' '
